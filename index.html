@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Vue Todo List</title>
-  <meta charset="utf-8">
-  <meta name="description" content="Vue Todo List">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta name="author" content="John Uberbacher">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Vue Todo List</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Vue Todo List">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="author" content="John Uberbacher">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/vue.min.js"></script>
 </head>
 <body>
-  <div>
-  
-  </div>
-  <script src="js/vue.min.js"></script>
-  <script src="js/script.js"></script>
+	<div id="app" class="container">
+		<h1>Vue To-do List</h1>
+		<input type="text" v-model="todoText" placeholder="Enter new item..." />
+		<button v-on:click="addTodo()" class="btn btn-primary btn-sm">Add</button>
+		<ul>
+			<li v-for="todo in todos">
+				<label>
+					<input type="checkbox" v-model="todo.complete" />
+					<span v-bind:class="{'complete': todo.complete}">{{todo.text}}</span>
+				</label>
+			</li>
+		</ul>
+	</div>
+	<script src="js/script.js"></script>
 </body>

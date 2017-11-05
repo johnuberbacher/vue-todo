@@ -1,0 +1,39 @@
+body { 
+	font-size: 14px;
+	min-width: 300px;
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+    background: #f3f3f3;
+    margin: 0;
+	padding: 70px 30px 0px 30px;
+	font-weight: 100; }
+h1 { margin: 15px 0 60px 0; }
+ul { font-family: 'Ubuntu', sans-serif;
+	list-style-type: none; 
+	margin: 0 auto; 
+	background: #fff; 
+	max-width: 600px; 
+	text-align: left; 
+	padding: 10px; 
+	box-shadow: 0px 1px 3px rgb(217, 217, 217);
+	border-radius: 3px; }
+ul li { 
+	padding: 0; 
+	font-family: 'Ubuntu', sans-serif;
+	transition: 0.05s background;
+	border-radius: 3px; }
+ul li:active { background: #e9f0f2; }
+input, button { 
+	font-size: 13px;
+	display: inline; 
+	padding: 12px 15px;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0px 0px 15px 0px;
+	box-shadow: 0px 1px 3px rgb(217, 217, 217);
+	border: none; 
+	border-radius: 3px; }
+input[type="checkbox"] { margin: 0px 15px 0px 0px; }
+label { display: block; padding: 10px; }
+button { font-weight: 500; margin-left: 5px; background: #8dc2e3; color: #ffffff; }
+.container { max-width: 900px; width: 100%; margin: 0 auto; padding: 0; }
+.complete { text-decoration: line-through; color: grey; }
