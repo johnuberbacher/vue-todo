@@ -18,10 +18,10 @@
 		<button v-on:click="addTodo()" class="btn btn-primary btn-sm">Add</button>
 		<ul>
 			<li v-for="todo in todos">
-				<label>
-					<input type="checkbox" v-model="todo.complete" />
-					<span v-bind:class="{'complete': todo.complete}">{{todo.text}}</span>
-				</label>
+				<div>
+					<span>{{todo.text}}</span>
+					<span class="remove" @click="removeTodo(todo)"></span>
+				</div>
 			</li>
 		</ul>
 	</div>
