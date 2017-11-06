@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
 	<title>Vue Todo List</title>
@@ -14,7 +14,7 @@
 <body>
 	<div id="app" class="container">
 		<h1>Vue To-do List</h1>
-		<input type="text" v-model="todoText" placeholder="Enter new item..." />
+		<input type="text" v-model="todoText" @keyup.enter="addTodo()" placeholder="Enter new item..." autofocus >
 		<button v-on:click="addTodo()" class="btn btn-primary btn-sm">Add</button>
 		<ul>
 			<li v-for="todo in todos">
