@@ -10,7 +10,8 @@ body {
 	padding: 70px 30px 0px 30px;
 	font-weight: 100; }
 h1 { margin: 15px 0 60px 0; }
-ul { font-family: 'Ubuntu', sans-serif;
+ul { 
+	font-family: 'Ubuntu', sans-serif;
 	list-style-type: none; 
 	margin: 0 auto; 
 	background: #fff; 
@@ -47,5 +48,4 @@ button { font-weight: 500; margin-left: 5px; background: #8dc2e3; color: #ffffff
 	background: url('../img/remove.svg'); 
 	background-size: contain; 
 	margin-top: -3px; }
-li>div:hover .remove { 
-	display: block; }
+li>div:hover .remove { display: block; }
